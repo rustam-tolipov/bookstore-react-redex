@@ -20,7 +20,7 @@ const Navbar = () => {
       <ul>
         <h1>BookStore CMD</h1>
         {pages.map((page) => (
-          <li key={pages.id}>
+          <li key={page.id}>
             <NavLink to={page.text} activeClassName="active-link" exact>
               {page.text}
             </NavLink>

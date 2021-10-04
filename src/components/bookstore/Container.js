@@ -12,7 +12,13 @@ const Container = () => {
       <Navbar />
       <Switch>
         <Route exact path="/">
-          <div>
+          <div className="container">
+            <List />
+            <Input />
+          </div>
+        </Route>
+        <Route exact path="/BOOKS">
+          <div className="container">
             <List />
             <Input />
           </div>
@@ -20,9 +26,9 @@ const Container = () => {
         <Route path="/categories">
           <CategoriesPage />
         </Route>
-        <Route path="*">
-          <NotMatched/>
-        </Route>
+        {/* <Route path="/">
+          <NotMatched />
+        </Route> */}
       </Switch>
     </div>
   );
