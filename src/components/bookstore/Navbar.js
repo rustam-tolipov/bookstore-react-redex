@@ -21,7 +21,7 @@ const Navbar = () => {
         <h1>BookStore CMD</h1>
         {pages.map((page) => (
           <li key={page.id}>
-            <NavLink to={page.text} activeClassName="active-link" exact>
+            <NavLink to={page.path} activeClassName="active-link" exact>
               {page.text}
             </NavLink>
           </li>
