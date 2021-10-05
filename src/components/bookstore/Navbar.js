@@ -5,12 +5,12 @@ const Navbar = () => {
   const pages = [
     {
       id: 1,
-      path: '/',
+      path: '/BookStore-React-Redex/',
       text: 'BOOKS',
     },
     {
       id: 2,
-      path: '/categories',
+      path: '/BookStore-React-Redex/categories',
       text: 'CATEGORIES',
     },
   ];

@@ -25,7 +25,12 @@ const List = () => {
   return (
     <ul>
       {booksStore.map((book) => (
-        <Book key={book.id} title={book.title} author={book.author} categories={book.categories} />
+        <Book
+          key={book.index}
+          title={book.title}
+          author={book.author}
+          categories={book.categories}
+        />
       ))}
     </ul>
   );

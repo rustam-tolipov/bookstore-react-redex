@@ -6,21 +6,21 @@ import List from './List';
 import Navbar from './Navbar';
 
 const Container = () => (
-  <>
+  <div>
     <Navbar />
     <Switch>
-      <Route exact path="/">
+      <Route exact path="/BookStore-React-Redex/">
         <div className="container">
           <List />
           <Input />
         </div>
       </Route>
 
-      <Route path="/categories">
+      <Route path="/BookStore-React-Redex/categories">
         <CategoriesPage />
       </Route>
     </Switch>
-  </>
+  </div>
 );
 
 export default Container;
