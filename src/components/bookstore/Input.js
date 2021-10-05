@@ -8,7 +8,7 @@ function Input() {
   const [inputBook, setInputBook] = useState({
     title: '',
     author: '',
-    category: '',
+    category: 'Romance',
   });
 
   const onChange = (e) => {
@@ -34,10 +34,10 @@ function Input() {
         <input name="title" type="text" placeholder="Book title" value={title} onChange={onChange} />
         <input name="author" type="text" placeholder="Book author" value={author} onChange={onChange} />
         <select name="category" id="categories" value={category} onChange={onChange}>
-          <option value="First Category">Romance</option>
-          <option value="Second Category">Mystery</option>
-          <option value="Third Category">Fantasy and science fiction</option>
-          <option value="Fourth Category">Thrillers and horror</option>
+          <option value="Romance">Romance</option>
+          <option value="Mystery">Mystery</option>
+          <option value="Fantasy and science fiction">Fantasy and science fiction</option>
+          <option value="Thrillers and horror">Thrillers and horror</option>
         </select>
         <button type="button" onClick={handleSubmit}>
           ADD BOOK
