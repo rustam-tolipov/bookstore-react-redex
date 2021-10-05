@@ -1,8 +1,8 @@
 import React from 'react';
 import { Route, Switch } from 'react-router-dom';
-import CategoriesPage from '../pages/CategoriesPage';
-import Input from './Input';
-import List from './List';
+import CategoriesPage from './pages/CategoriesPage';
+import Input from './bookstore/Input';
+import List from './bookstore/List';
 import Navbar from './Navbar';
 
 const Container = () => (
