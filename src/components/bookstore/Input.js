@@ -27,8 +27,7 @@ function Input() {
 
     const newBook = {
       id: uuidv4(),
-      title: enteredTitle,
-      author: enteredAuthor,
+      title: `${enteredTitle} - ${enteredAuthor}`,
       category: enteredCategory,
     };
 
@@ -43,7 +42,7 @@ function Input() {
       <h2>ADD NEW BOOK</h2>
       <form>
         <input name="title" value={enteredTitle} type="text" placeholder="Book title" onChange={titleChangeHandler} />
-        <input name="author" value={enteredAuthor} type="text" placeholder="Book author" onChange={authorChangeHandler} />
+        <input name="title" value={enteredAuthor} type="text" placeholder="Author" onChange={authorChangeHandler} />
         <select name="category" value={enteredCategory} id="categories" onChange={categoryChangeHandler}>
           <option value="Romance">Romance</option>
           <option value="Mystery">Mystery</option>
