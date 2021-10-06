@@ -21,7 +21,7 @@ To get a local copy up and running follow these simple example steps.
 
 ## Live Demo
 
-[Live Demo Link](http://Rustamxon7.github.io/BookStore-React-Redux)
+[Live Demo Link](https://rustamxon7.github.io/BookStore-React-Redex/)
 
 ### Install
 
