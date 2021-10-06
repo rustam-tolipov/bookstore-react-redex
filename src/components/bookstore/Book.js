@@ -3,18 +3,18 @@ import PropTypes from 'prop-types';
 import { useDispatch } from 'react-redux';
 import { removeBook } from '../../redux/books/books';
 
-const BookItem = (props) => {
+const Book = (props) => {
   const { book } = props;
-  const {
-    title, author, category, id,
-  } = book;
+  const { title, category, id } = book;
+  const [bookTitle, author] = title.split('-');
+
   const dispatch = useDispatch();
   return (
     <div>
       <li>
-        {title}
+        {bookTitle}
         <br />
-        {author}
+        <p style={{ color: 'blue' }}>{author}</p>
         <br />
         {category}
         <button type="button" onClick={() => dispatch(removeBook(id))}>
@@ -25,8 +25,8 @@ const BookItem = (props) => {
   );
 };
 
-BookItem.propTypes = {
+Book.propTypes = {
   book: PropTypes.instanceOf(Object).isRequired,
 };
 
-export default BookItem;
+export default Book;
