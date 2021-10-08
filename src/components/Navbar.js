@@ -26,6 +26,9 @@ const Navbar = () => {
             </NavLink>
           </li>
         ))}
+        <div className="user-img">
+          <ion-icon name="person"> </ion-icon>
+        </div>
       </ul>
     </div>
   );
