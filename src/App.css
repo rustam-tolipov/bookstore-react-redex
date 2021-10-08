@@ -68,13 +68,11 @@ body {
   font-size: 2rem;
   font-weight: bold;
   color: #888;
-
   padding: 2.4rem 0 3rem 0;
 }
 
 .form__input {
   padding: 1.2rem 2.4rem;
-
   border: 1px solid #c4c4c4;
   border-radius: 3px;
   outline-color: #0290ff;
@@ -121,7 +119,7 @@ body {
 }
 
 .card:hover {
-  box-shadow: 0 1rem 2rem 0rem rgba(0, 0, 0, 0.219);
+  box-shadow: 0 1rem 2rem 0.1rem rgba(0, 0, 0, 0.219);
 }
 
 .card__buttons {
@@ -213,7 +211,8 @@ body {
 }
 
 .chapter__text {
-  color: 1.4rem;
+  color: #12121288;
+  font-size: 1.2rem;
   text-transform: uppercase;
 }
 
