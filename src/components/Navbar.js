@@ -16,9 +16,9 @@ const Navbar = () => {
   ];
 
   return (
-    <div>
-      <ul>
-        <h1>BookStore CMD</h1>
+    <div className="nav">
+      <ul className="nav__list">
+        <h1 className="nav__heading">BookStore CMD</h1>
         {pages.map((page) => (
           <li key={page.id}>
             <NavLink to={page.path} activeClassName="active-link" exact>
@@ -26,6 +26,9 @@ const Navbar = () => {
             </NavLink>
           </li>
         ))}
+        <div className="user-img">
+          <ion-icon name="person"> </ion-icon>
+        </div>
       </ul>
     </div>
   );

@@ -6,7 +6,7 @@ import List from './bookstore/List';
 import Navbar from './Navbar';
 
 const Container = () => (
-  <div>
+  <div className="box">
     <Navbar />
     <Switch>
       <Route exact path="/BookStore-React-Redex/">
