@@ -11,7 +11,7 @@ function List() {
 
   const books = useSelector((state) => state.books);
   return (
-    <ul>
+    <ul className="cards__list">
       {books.map((book) => (
         <Book key={book.id} book={book} />
       ))}

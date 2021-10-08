@@ -38,18 +38,18 @@ function Input() {
   };
 
   return (
-    <div>
-      <h2>ADD NEW BOOK</h2>
+    <div className="form">
+      <h2 className="form__heading">ADD NEW BOOK</h2>
       <form>
-        <input name="title" value={enteredTitle} type="text" placeholder="Book title" onChange={titleChangeHandler} />
-        <input name="title" value={enteredAuthor} type="text" placeholder="Author" onChange={authorChangeHandler} />
-        <select name="category" value={enteredCategory} id="categories" onChange={categoryChangeHandler}>
+        <input className="form__input" name="title" value={enteredTitle} type="text" placeholder="Book title" onChange={titleChangeHandler} />
+        <input className="form__input" name="title" value={enteredAuthor} type="text" placeholder="Author" onChange={authorChangeHandler} />
+        <select className="form__input" name="category" value={enteredCategory} id="categories" onChange={categoryChangeHandler}>
           <option value="Romance">Romance</option>
           <option value="Mystery">Mystery</option>
           <option value="Fantasy and science fiction">Fantasy and science fiction</option>
           <option value="Thrillers and horror">Thrillers and horror</option>
         </select>
-        <button type="button" onClick={submitHandler}>
+        <button className="form__btn" type="button" onClick={submitHandler}>
           ADD BOOK
         </button>
       </form>
